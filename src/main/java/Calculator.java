@@ -16,10 +16,10 @@ public class Calculator {
         return a * b;
     }
     public int solver() {
-        // Решаем выражение: ((10 + 5) - 3) * 2 / 4
-        int sum = add(10, 5);       // 15
-        int diff = dif(sum, 3);     // 12
-        int product = times(diff, 2); // 24
-        return div(product, 4);     // 6
+        // Решаем выражение: ((20 - 4) / 2 + 7) * 3
+        int base = dif(20, 4);      // 16
+        int half = div(base, 2);    // 8
+        int sum = add(half, 7);     // 15
+        return times(sum, 3);       // 45
     }
 }
